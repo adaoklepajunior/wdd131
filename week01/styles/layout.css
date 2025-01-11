@@ -1,0 +1,75 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to use CSS Grid for the layout */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Header section styles */
+header {
+    background-color: #333;
+    color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+/* Header content */
+.header-content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Navigation menu using Flexbox */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content and aside section layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ccc;
+    height: 100%;
+}
+
+/* Main content area */
+.main-content {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Aside content */
+aside {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
