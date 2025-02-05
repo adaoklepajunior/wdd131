@@ -1,0 +1,51 @@
+/* Basic styling */
+body {
+    font-family: "Times New Roman", Times, serif; /* Set Times New Roman as the default font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #100c4a;
+    color: white;
+    padding: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Use Comic Sans in the header */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto;
+    background: #333;
+    animation: fadeIn 15s;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Ensure the footer sticks to the bottom */
+footer {
+    background-color: #100c4a;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Use Comic Sans in the footer */
+}
