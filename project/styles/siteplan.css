@@ -1,0 +1,52 @@
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #effcf2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #0e7d35;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main */
+main {
+    margin: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #c90e0e;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+img {
+    border: 1px solid #a8f5c8;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
