@@ -36,7 +36,7 @@ h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 52px;
     margin: 0;
 }
 
@@ -45,9 +45,19 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #170674;
+    background-color: #95f2a1fd;
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7%;
+    /* Sunny effect */
 }
 
 #hamburger {
@@ -104,6 +114,7 @@ figure {
     max-height: 398px;
     width: 100%;
     height: auto;
+    border-radius: 5%;
 }
 
 button[type="submit"] {
@@ -169,7 +180,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2F4F4F;
+    background-color: #055303;
     color: #fff;
     padding: 10px 20px;
 }
@@ -250,10 +261,11 @@ form button[type="submit"]:hover {
 @media (max-width: 768px) {
     /* Index html */
     .attractive-section,
-    .about-section,
     .pages-section {
         flex-direction: column;
         align-items: center;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 
     /* Obligations, Taxes and Fines html */

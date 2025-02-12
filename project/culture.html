@@ -1,29 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fines - Learn about fines and penalties for non-compliance.">
+    <meta name="author" content="Néfi Muniz">
+    <title>Fines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/fines.js" defer></script>
+</head>
+<body>
+    <header class="pin-header">
+        <h1>Account Task Manager</h1>
+        <nav>
+            <button id="hamburger" aria-label="menu" aria-expanded="false">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="obligations.html">Accessory Obligations</a></li>
+                <li><a href="taxes.html">Taxes</a></li>
+                <li><a href="fines.html">Fines</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section>
+            <header>
+                <h2>Fines for Missing Obligations</h2>
+                    <p>Learn about fines and penalties for non-compliance and how to avoid them.</p>
+            </header>
 
+            <div id="category-buttons">
+                <button onclick="loadFines('large')">Large Company</button>
+                <button onclick="loadFines('medium')">Medium-Sized Company</button>
+                <button onclick="loadFines('simple')">Simple Business</button>
+                <button onclick="loadFines('individual')">Individual Business</button>
+            </div>
 
-<section class="newsletter">
-    <h3>Subscribe to Our Newsletter</h3>
-    <form id="subscription-form">
-        <fieldset>
-            <legend>General Information</legend>
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+            <div id="fines-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Obligation Name</th>
+                            <th>Due Time</th>
+                            <th>Fine Range</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- JS Content -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="subscription-form">
+                <fieldset>
+                    <legend>General Information</legend>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="company">Company's Name:</label>
+                    <input type="text" id="company" name="company" required>
+        
+                    <label for="size">Business Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="small">Large Company</option>
+                        <option value="medium">Medium-Sized Company</option>
+                        <option value="large">Simples Business</option>
+                        <option value="enterprise">Individual Business</option>
+                    </select>
+                </fieldset>
+        
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="company">Company's Name:</label>
-            <input type="text" id="company" name="company" required>
-
-            <label for="size">Business Size:</label>
-            <select id="size" name="size" required>
-                <option value="small">Large Company</option>
-                <option value="medium">Medium-Sized Company</option>
-                <option value="large">Simples Business</option>
-                <option value="enterprise">Individual Business</option>
-            </select>
-        </fieldset>
-
-        <button type="submit">Subscribe</button>
-    </form>
-</section>
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> Account Task Manager | Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

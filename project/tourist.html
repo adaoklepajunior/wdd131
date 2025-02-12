@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessory Obligations - Manage your company's accessory obligations.">
+    <meta name="author" content="Néfi Muniz">
+    <title>Accessory Obligations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/obligations.js" defer></script>
+</head>
+<body>
+    <header class="pin-header">
+        <h1>Account Task Manager</h1>
+        <nav>
+            <button id="hamburger" aria-label="menu" aria-expanded="false">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="obligations.html">Accessory Obligations</a></li>
+                <li><a href="taxes.html">Taxes</a></li>
+                <li><a href="fines.html">Fines</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2>Accessory Obligations</h2>
+                <p>Stay on top of your company’s accessory obligations and ensure compliance with tax regulations.</p>
+            </header>
+
+            <div id="category-buttons">
+                <button onclick="loadObligations('large')">Large Company</button>
+                <button onclick="loadObligations('medium')">Medium-Sized Company</button>
+                <button onclick="loadObligations('simple')">Simple Business</button>
+                <button onclick="loadObligations('individual')">Individual Business</button>
+            </div>
+
+            <div id="obligations-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Obligation Name</th>
+                            <th>Area</th>
+                            <th>Period</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- JS provides Information -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> Very Coolritiba | Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

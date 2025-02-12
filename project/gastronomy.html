@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taxes - Manage your tax-related tasks and deadlines.">
+    <meta name="author" content="Néfi Muniz">
+    <title>Taxes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/taxes.js" defer></script>
+</head>
+<body>
+    <header class="pin-header">
+        <h1>Account Task Manager</h1>
+        <nav>
+            <button id="hamburger" aria-label="menu" aria-expanded="false">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="obligations.html">Accessory Obligations</a></li>
+                <li><a href="taxes.html">Taxes</a></li>
+                <li><a href="fines.html">Fines</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2>Taxes</h2>
+                <p>Manage your tax-related tasks, track deadlines, and stay compliant.</p>
+            </header>
+
+            <div id="category-buttons">
+                <button onclick="loadTaxes('large')">Large Company</button>
+                <button onclick="loadTaxes('medium')">Medium-Sized Company</button>
+                <button onclick="loadTaxes('simple')">Simple Business</button>
+                <button onclick="loadTaxes('individual')">Individual Business</button>
+            </div>
+
+            <div id="taxes-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tax Name</th>
+                            <!-- <th>Tax Base</th> -->
+                            <th>Rate(%)/Value(R$)</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- JS Content -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> Account Task Manager | Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
