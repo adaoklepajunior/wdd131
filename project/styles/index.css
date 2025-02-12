@@ -1,0 +1,296 @@
+/* Base Styles */
+body {
+    font-family: "Nanum Gothic", serif;
+    background-color: #ffebeb;
+    margin: 50px;
+    padding: 0;
+}
+
+.pin-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    z-index: 1000;
+    padding: 30px 20px;
+    background-color: #055303
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #04518b;
+    color: #fff;
+    padding: 3px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Nanum Gothic", serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hamburger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+main {
+    padding: 65px;
+}
+
+h2 {
+    color: #f9f9f7;
+}
+
+/* Index.html */
+.attractive-section,
+.about-section,
+.pages-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.attractive-section img {
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+.attractive-section p,
+.about-section p {
+    margin-top: 18%;
+    margin-left: 20%;
+    margin-right: 18%;
+}
+
+.attractive-section img {
+    max-width: 100%;
+}
+
+figure {
+    text-align: center;
+}
+
+.pages-section img {
+    max-width: 524px;
+    max-height: 398px;
+    width: 100%;
+    height: auto;
+}
+
+button[type="submit"] {
+    background-color: #0051ff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #2F4F4F;
+    color: #e4e70f;
+    opacity: 0.9;
+}
+
+/* Obligations, Taxes and Fines html */
+#category-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#category-buttons button {
+    background-color: #192c61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#category-buttons button:hover {
+    background-color: #003de6;
+    color:#000000;
+}
+
+#obligations-table,
+#taxes-table,
+#fines-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#obligations-table th, #obligations-table td,
+#taxes-table th, #taxes-table td,
+#fines-table th, #fines-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#obligations-table th,
+#taxes-table th,
+#fines-table th {
+    background-color: #192c61;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F4F4F;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 15px;
+}
+
+footer .footer-info {
+    text-align: right;
+}
+
+/* Form Styles */
+.newsletter form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h3 {
+    text-align: center;
+    color: #2F4F4F;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #2F4F4F;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0051ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #003bb5;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    /* Index html */
+    .attractive-section,
+    .about-section,
+    .pages-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Obligations, Taxes and Fines html */
+    #category-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #obligations-table th, #obligations-table td,
+    #taxes-table th, #taxes-table td,
+    #fines-table th, #fines-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav button#hamburger {
+        display: block;
+    }
+
+    nav button[aria-expanded="true"] + ul {
+        display: flex;
+    }
+}
+
+.attractive-section img {
+    margin-top: 0%;
+    margin-right: 0%;
+}
+
+.attractive-section p,
+.about-section p {
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
