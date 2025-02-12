@@ -69,7 +69,6 @@ h2 {
 
 /* Index.html */
 .attractive-section,
-.about-section,
 .pages-section {
     display: flex;
     justify-content: space-between;
@@ -83,15 +82,17 @@ h2 {
     border-radius: 10%;
 }
 
-.attractive-section p,
-.about-section p {
+.attractive-section p {
     margin-top: 18%;
     margin-left: 20%;
     margin-right: 18%;
 }
 
 .attractive-section img {
-    max-width: 100%;
+    max-width: 2400px;
+    max-height: 1600px;
+    width: 100%;
+    height: auto;
 }
 
 figure {
