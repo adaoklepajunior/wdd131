@@ -132,50 +132,6 @@ button[type="submit"]:hover {
     opacity: 0.9;
 }
 
-/* Obligations, Taxes and Fines html */
-#category-buttons {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
-}
-
-#category-buttons button {
-    background-color: #192c61;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#category-buttons button:hover {
-    background-color: #003de6;
-    color:#000000;
-}
-
-#obligations-table,
-#taxes-table,
-#fines-table {
-    margin-top: 20px;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-#obligations-table th, #obligations-table td,
-#taxes-table th, #taxes-table td,
-#fines-table th, #fines-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-}
-
-#obligations-table th,
-#taxes-table th,
-#fines-table th {
-    background-color: #192c61;
-    color: #fff;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
