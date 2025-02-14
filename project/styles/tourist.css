@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav ul {
     display: none;
     flex-direction: column;
@@ -19,6 +24,18 @@ nav button[aria-expanded="true"] + ul {
 
 .the-world {
     margin-top: 50px;
+}
+
+#sec-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+nav ul li.show {
+    display: flex;
 }
 
 .atractions-grid {
@@ -138,4 +155,5 @@ nav ul.show {
     nav button#hamburger {
         display: none;
     }
+
 }

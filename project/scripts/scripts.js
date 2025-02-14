@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('lastModified').textContent = lastModified;
 });
 
-// Hamburger menu toggle for mobile view
+// 1st Hamburger menu toggle for mobile view
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('nav ul');
 
