@@ -17,148 +17,116 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
 });
 
-const temples = [
+const atractions = [
     {
-      templeName: "Aba Nigeria",
-      location: "Aba, Nigeria",
-      dedicated: "2005, August, 7",
-      area: 11500,
+      atractionName: "Botanical Garden",
+      location: "Bairro Jardim Botânico",
+      dedicated: "1991, October, 5",
+      area: 2992367.1,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+      "https://images.pexels.com/photos/1754064/pexels-photo-1754064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      templeName: "Manti Utah",
-      location: "Manti, Utah, United States",
-      dedicated: "1888, May, 21",
-      area: 74792,
+      atractionName: "Train Ride Through the Mountains",
+      location: "Bairro Jardim Botânico",
+      dedicated: "1884, May, 21",
+      area: 101284,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+      "https://images.pexels.com/photos/825785/pexels-photo-825785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      templeName: "Payson Utah",
-      location: "Payson, Utah, United States",
-      dedicated: "2015, June, 7",
-      area: 96630,
+      atractionName: "Tanguá Park",
+      location: "Bairro Pilarzinho",
+      dedicated: "1996, November, 23",
+      area: 2540282.86,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+      "https://images.pexels.com/photos/19220139/pexels-photo-19220139/free-photo-of-por-do-sol-ponto-de-referencia-ponto-historico-relaxamento.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      templeName: "Yigo Guam",
-      location: "Yigo, Guam",
-      dedicated: "2020, May, 2",
-      area: 6861,
+      atractionName: "Ópera de Arame - Wire Opera",
+      location: "Bairro Abranches",
+      dedicated: "1992, March, 18",
+      area: 1108682.77,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+      "https://images.pexels.com/photos/12828285/pexels-photo-12828285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      templeName: "Washington D.C.",
-      location: "Kensington, Maryland, United States",
-      dedicated: "1974, November, 19",
-      area: 156558,
+      atractionName: "Oscar Niemeyer Museum",
+      location: "Centro Cívico",
+      dedicated: "2002, November, 22",
+      area: 376736.86,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+      "https://images.pexels.com/photos/1045200/pexels-photo-1045200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-      templeName: "Lima Perú",
-      location: "Lima, Perú",
-      dedicated: "1986, January, 10",
-      area: 9600,
-      imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
-    },
-    {
-      templeName: "Mexico City Mexico",
-      location: "Mexico City, Mexico",
-      dedicated: "1983, December, 2",
-      area: 116642,
-      imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-    },
-    // Add more temple objects here...
-    {
-      templeName: "Curitiba Brazil",
-      location: "Curitiba, Brazil",
+      atractionName: "Curitiba Brazil Temple",
+      location: "Bairro Mossunguê",
       dedicated: "2008, June, 1",
       area: 27850,
       imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/curitiba-brazil-temple/curitiba-brazil-temple-1235.jpg"
     },
-    {
-      templeName: "Salvador Brazil",
-      location: "Salvador - Bahia, Brazil",
-      dedicated: "2024, October, 20",
-      area: 29963,
-      imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/salvador-brazil-temple/salvador-brazil-temple-47153.jpg"
-    },
-    {
-      templeName: "Hong Kong China",
-      location: "Hong Kong, China",
-      dedicated: "1996, May, 27",
-      area: 51921,
-      imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-27373-thumb.jpg"
-    },
+    
   ];
   
-  // Create temple cards
-  function displayTemples(temples) {
-      // where temple will be displayed
-      const templeGrid = document.querySelector('.temples-grid');
-      templeGrid.innerHTML = "";
+  // Create atraction cards
+  function displayAtractions(atractions) {
+      // where atraction will be displayed
+      const atractionGrid = document.querySelector('.atractions-grid');
+      atractionGrid.innerHTML = "";
   
-      temples.forEach(temple => {
+      atractions.forEach(atraction => {
           // Create a figure element
           const figure = document.createElement('figure');
   
           // Create and append an image element with lazy loading
           const img = document.createElement('img');
-          img.src = temple.imageUrl;
-          img.alt = `${temple.templeName}`;
+          img.src = atraction.imageUrl;
+          img.alt = `${atraction.atractionName}`;
           img.loading = "lazy";
           figure.appendChild(img);
   
           // Create and append a caption and the figure
           const figcaption = document.createElement('figcaption');
           figcaption.innerHTML = `
-              <h3>${temple.templeName}</h3>
-              <p><strong>Location:</strong> ${temple.location}</p>
-              <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-              <p><strong>Area:</strong> ${temple.area}</p>
+              <h3>${atraction.atractionName}</h3>
+              <p><strong>Location:</strong> ${atraction.location}</p>
+              <p><strong>Dedicated:</strong> ${atraction.dedicated}</p>
+              <p><strong>Area:</strong> ${atraction.area}</p>
           `;
           figure.appendChild(figcaption);
-          templeGrid.appendChild(figure);
+          atractionGrid.appendChild(figure);
       });
   }
   
-  function filterTemples(option) {
-      let filteredTemples = temples;
+  function filterAtractions(option) {
+      let filteredAtractions = atractions;
   
       switch (option) {
-          case "old":
-              filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+          case "older":
+              filteredAtractions = atractions.filter(atraction => new Date(atraction.dedicated).getFullYear() < 1900);
               break;
-          case "new":
-              filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+          case "newer":
+              filteredAtractions = atractions.filter(atraction => new Date(atraction.dedicated).getFullYear() > 2000);
               break;
-          case "large":
-              filteredTemples = temples.filter(temple => temple.area >90000);
+          case "huge":
+              filteredAtractions = atractions.filter(atraction => atraction.area >1000000);
               break;
           case "small":
-              filteredTemples = temples.filter(temple => temple.area < 10000);
+              filteredAtractions = atractions.filter(atraction => atraction.area < 40000);
               break;
           default:
-              filteredTemples = temples;
+              filteredAtractions = atractions;
               break;
       }
-      displayTemples(filteredTemples);
+      displayAtractions(filteredAtractions);
   }
   
-  document.getElementById("home").addEventListener("click", () => filterTemples("home"));
-  document.getElementById("old").addEventListener("click", () => filterTemples("old"));
-  document.getElementById("new").addEventListener("click", () => filterTemples("new"));
-  document.getElementById("large").addEventListener("click", () => filterTemples("large"));
-  document.getElementById("small").addEventListener("click", () => filterTemples("small"));
+  document.getElementById("home").addEventListener("click", () => filterAtractions("home"));
+  document.getElementById("older").addEventListener("click", () => filterAtractions("older"));
+  document.getElementById("newer").addEventListener("click", () => filterAtractions("newer"));
+  document.getElementById("huge").addEventListener("click", () => filterAtractions("huge"));
+  document.getElementById("small").addEventListener("click", () => filterAtractions("small"));
   
-  // Call the function and pass the array of temples
-  displayTemples(temples);
+  // Call the function and pass the array of atractions
+  displayAtractions(atractions);

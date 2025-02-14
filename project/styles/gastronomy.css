@@ -17,11 +17,12 @@ nav button[aria-expanded="true"] + ul {
     display: flex;
 }
 
+
 .the-world {
     margin-top: 50px;
 }
 
-.atractions-grid {
+.foods-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -112,7 +113,7 @@ nav ul.show {
         background-color: #f3fd69fd;
     }
 
-    .atractions-grid {
+    .foods-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         padding: 2rem;

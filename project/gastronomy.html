@@ -3,58 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Taxes - Manage your tax-related tasks and deadlines.">
-    <meta name="author" content="Néfi Muniz">
-    <title>Taxes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Very coolritiba - Allow yourself to discover the wonders of this city.">
+    <meta name="author" content="Adão Klepa Junior">
+    <title>Very Coolritiba - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/taxes.js" defer></script>
+    <link rel="stylesheet" href="styles/gastronomy.css">
+    <script src="scripts/gastronomy.js" defer></script>
 </head>
 <body>
     <header class="pin-header">
-        <h1>Account Task Manager</h1>
+        <h1>Very <I>Cool</I>ritiba</h1>
         <nav>
             <button id="hamburger" aria-label="menu" aria-expanded="false">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="obligations.html">Accessory Obligations</a></li>
-                <li><a href="taxes.html">Taxes</a></li>
-                <li><a href="fines.html">Fines</a></li>
+                <li><a href="tourist.html">Tourist Attractions</a></li>
+                <li><a href="gastronomy.html">Gastronomy</a></li>
+                <li><a href="culture.html">Culture and Beyond</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <header>
-                <h2>Taxes</h2>
-                <p>Manage your tax-related tasks, track deadlines, and stay compliant.</p>
+        <section class="container">
+            <header class="the-world">
+                <h2>Let's talk about food!</h2>
+                <p>There is a huge variety of dishes ranging from the most sophisticated to the most delicious snacks.</p>
             </header>
 
-            <div id="category-buttons">
-                <button onclick="loadTaxes('large')">Large Company</button>
-                <button onclick="loadTaxes('medium')">Medium-Sized Company</button>
-                <button onclick="loadTaxes('simple')">Simple Business</button>
-                <button onclick="loadTaxes('individual')">Individual Business</button>
-            </div>
+            <h1 class="title">Gastronomy Attractions</h1>
+            <nav>
+                <div id="menu"></div>
+                <ul>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="cheap">Cheap</a></li>
+                    <li><a href="#" id="expensive">Expensive</a></li>
+                    <li><a href="#" id="super-caloric">Super Caloric</a></li>
+                    <li><a href="#" id="caloric">Caloric</a></li>
+                </ul>
+            </nav>
+        </section>
+    
+        <section>
+            <p>Curitiba boasts a vibrant snack culture, with a wide variety of options like pizza, burgers, 
+                and other street food favorites. Pizzas in the city often feature creative toppings, blending 
+                traditional Italian flavors with local ingredients. Burgers are equally popular, with gourmet 
+                options and food trucks offering everything from classic cheeseburgers to innovative combinations. 
+                The ultimate street food staple is undoubtedly the hot dog, which is pressed on a griddle. 
+                Additionally, Curitiba is known for its pastel, a crispy fried pastry filled with cheese, meat, 
+                or other savory ingredients, commonly found at street markets. Another local favorite is the 
+                coxinha, a tear-shaped fried snack filled with shredded chicken. For something sweet, churros 
+                filled with dulce de leche are a must-try. These snacks reflect the city's diverse culinary 
+                influences and its love for hearty, flavorful food.</p>
+        </section>
 
-            <div id="taxes-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tax Name</th>
-                            <!-- <th>Tax Base</th> -->
-                            <th>Rate(%)/Value(R$)</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-body">
-                        <!-- JS Content -->
-                    </tbody>
-                </table>
-            </div>
-
+        <section>
+            <div class="foods-grid"></div>
+        </section>
+        
+        <section>
+            <p>Also, Curitiba's cuisine reflects the city's diverse cultural heritage, blending Brazilian, European, 
+                and Middle Eastern influences. Known for its use of fresh, local ingredients, the food scene 
+                features traditional dishes like barreado, a slow-cooked beef stew served with rice and bananas. 
+                German and Italian immigrants have also left their mark, with hearty dishes such as sausages, 
+                strudels, and pasta being popular. Additionally, Curitiba offers a variety of artisanal cheeses, 
+                wines, and craft beers. The city's vibrant food markets, like Mercado Municipal, showcase its 
+                culinary richness, making it a delightful destination for food lovers.</p>
         </section>
     </main>
 
@@ -65,7 +82,7 @@
             <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
         <div class="footer-info">
-            <p>&copy; <span id="year"></span> Account Task Manager | Last modified: <span id="lastModified"></span></p>
+            <p>&copy; <span id="year"></span> Very Coolritiba | Last modified: <span id="lastModified"></span></p>
         </div>
     </footer>
 </body>

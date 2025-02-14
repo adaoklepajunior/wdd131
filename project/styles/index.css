@@ -1,7 +1,7 @@
 /* Base Styles */
 body {
     font-family: "Nanum Gothic", serif;
-    background-color: #ffebeb;
+    background-color: #faeeee;
     margin: 50px;
     padding: 0;
 }
@@ -14,7 +14,8 @@ body {
     /* width: 100%; */
     z-index: 1000;
     padding: 30px 20px;
-    background-color: #055303
+    background-color: #84fa82;
+    color: #02026e;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #04518b;
-    color: #fff;
+    color: #ffffff;
     padding: 3px 20px;
     text-align: center;
 }
@@ -45,14 +46,14 @@ nav li {
 }
 
 nav a {
-    color: #ffffff;
+    color: #02026e;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
     color: #170674;
-    background-color: #95f2a1fd;
+    background-color: #f3fd69fd;
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;
@@ -66,11 +67,12 @@ nav ul li a:hover {
     background: none;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: #0a0242;
 }
 
 main {
-    padding: 65px;
+    padding: 5px;
+    padding-top: 65px;
 }
 
 h2 {
@@ -103,6 +105,8 @@ h2 {
     max-height: 1600px;
     width: 100%;
     height: auto;
+    margin-top: 0%;
+    margin-right: 0%;
 }
 
 figure {
@@ -117,20 +121,6 @@ figure {
     border-radius: 5%;
 }
 
-button[type="submit"] {
-    background-color: #0051ff;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button[type="submit"]:hover {
-    background-color: #2F4F4F;
-    color: #e4e70f;
-    opacity: 0.9;
-}
 
 footer {
     display: flex;
@@ -150,128 +140,7 @@ footer .footer-info {
     text-align: right;
 }
 
-/* Form Styles */
-.newsletter form {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.newsletter h3 {
-    text-align: center;
-    color: #2F4F4F;
-}
-
-form fieldset {
-    border: none;
-    margin-bottom: 15px;
-}
-
-form legend {
-    font-weight: bold;
-    color: #2F4F4F;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-    color: #333;
-}
-
-form input[type="text"],
-form input[type="email"],
-form select,
-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form textarea {
-    resize: vertical;
-}
-
-form button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #0051ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-form button[type="submit"]:hover {
-    background-color: #003bb5;
-}
-
-/* Mobile View */
-@media (max-width: 768px) {
-    /* Index html */
-    .attractive-section,
-    .pages-section {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 1px;
-        margin-right: 1px;
-    }
-
-    p {
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0px;
-    }
-
-    body {
-        margin: 1px;
-        margin-top: 50px;
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-
-    /* Obligations, Taxes and Fines html */
-    #category-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #obligations-table th, #obligations-table td,
-    #taxes-table th, #taxes-table td,
-    #fines-table th, #fines-table td {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav button#hamburger {
-        display: block;
-    }
-
-    nav button[aria-expanded="true"] + ul {
-        display: flex;
-    }
-}
-
-.attractive-section img {
-    margin-top: 0%;
-    margin-right: 0%;
-}
-
-.attractive-section p,
-.about-section p {
+.attractive-section p {
     margin-top: 25px;
     margin-left: 50px;
     margin-right: 40px;
