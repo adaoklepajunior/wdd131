@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/culture.css">
+    <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/culture.js" defer></script>
 </head>
@@ -30,24 +32,64 @@
     <main>
         <section>
             <header>
-                <h2>Fines for Missing Obligations</h2>
-                    <p>Learn about fines and penalties for non-compliance and how to avoid them.</p>
+                <h2>A mixed place for sure!</h2>
+                    <p>Curitiba was not only colonized by diverse peoples with unique cultures, 
+                        but has also been the home of thousands of people from all over.</p>
+            </header>
+
+            <section class="attractive-section">
+                <div>
+                    <p>Curitiba, the capital of Paraná in Brazil, is a city renowned for its rich cultural diversity, 
+                        shaped significantly by waves of immigration. The city's cultural fabric is a vibrant tapestry 
+                        woven by various ethnic groups, including Italian, Polish, German, Ukrainian, and Japanese 
+                        communities, among others. Each group has left an indelible mark on Curitiba's identity, from 
+                        its architecture and cuisine to its festivals and traditions.
+                    </p>
+    
+                    <p>The influence of European colonization is particularly evident in the city's neighborhoods and 
+                        cultural institutions. The Santa Felicidade district, for example, is a hub of Italian heritage, 
+                        offering authentic Italian restaurants and cultural events. Similarly, the Polish and Ukrainian 
+                        communities have preserved their traditions through churches, folk dance groups, and festivals, 
+                        such as the famous Polish-inspired "Feira do Polonês."   
+                     </p>
+                </div>
+                <div>
+                    <img src="images/ovos-ucranianos.webp" alt="botanical garden" loading="lazy">
+                </div>
+            </section>
+            <section class="pages-section">
+                <figure>
+                    <img src="images/polish-dance.webp" alt="Tourist Attractions" loading="lazy">
+                    <figcaption>Polish culture is always present in Curitiba with dances and typical foods.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/japan-culture.webp" alt="food" loading="lazy">
+                    <figcaption>Beautiful cherry trees enhance the beauty of the city thanks to the culture brought by the Japanese</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ukranian-eggs.webp" alt="Culture" loading="lazy">
+                    <figcaption>Painted eggs are commonly found adorning many homes as Poles and Ukrainians share the tradition.</figcaption>
+                </figure>
+            </section>
+
+            <header>
+                <h2>Find a place to stay and fell free to tell us more about you!</h2>
             </header>
 
             <div id="category-buttons">
-                <button onclick="loadFines('large')">Large Company</button>
-                <button onclick="loadFines('medium')">Medium-Sized Company</button>
-                <button onclick="loadFines('simple')">Simple Business</button>
-                <button onclick="loadFines('individual')">Individual Business</button>
+                <button onclick="loadHotels('luxurious')">Luxurious hotels</button>
+                <button onclick="loadHotels('average')">Regular Hotels</button>
+                <button onclick="loadHotels('airbnb')">Airbnb</button>
+                <button onclick="loadHotels('room')">Rooms for rent</button>
             </div>
 
             <div id="fines-table">
                 <table>
                     <thead>
                         <tr>
-                            <th>Obligation Name</th>
-                            <th>Due Time</th>
-                            <th>Fine Range</th>
+                            <th>Hotel Name</th>
+                            <th>Daily Cost</th>
+                            <th>Characteristics</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
@@ -60,23 +102,16 @@
             <h3>Subscribe to Our Newsletter</h3>
             <form id="subscription-form">
                 <fieldset>
-                    <legend>General Information</legend>
+                    <legend>Tell us about you!</legend>
                     <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" required>
-        
+
                     <label for="email">Your Email:</label>
                     <input type="email" id="email" name="email" required>
         
-                    <label for="company">Company's Name:</label>
+                    <label for="company">Country and City:</label>
                     <input type="text" id="company" name="company" required>
         
-                    <label for="size">Business Size:</label>
-                    <select id="size" name="size" required>
-                        <option value="small">Large Company</option>
-                        <option value="medium">Medium-Sized Company</option>
-                        <option value="large">Simples Business</option>
-                        <option value="enterprise">Individual Business</option>
-                    </select>
                 </fieldset>
         
                 <button type="submit">Subscribe</button>
@@ -91,7 +126,7 @@
             <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
         <div class="footer-info">
-            <p>&copy; <span id="year"></span> Account Task Manager | Last modified: <span id="lastModified"></span></p>
+            <p>&copy; <span id="year"></span> Very Coolritiba | Last modified: <span id="lastModified"></span></p>
         </div>
     </footer>
 </body>

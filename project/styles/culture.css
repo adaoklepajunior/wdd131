@@ -1,4 +1,74 @@
 /* Form Styles */
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d2966;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0d2966;
+}
+
+button[type="submit"] {
+    background-color: #0d2966;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #2F4F4F;
+    color: #e4e70f;
+    opacity: 0.9;
+}
+
+#category-buttons {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#category-buttons button {
+    background-color: #192c61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#category-buttons button:hover {
+    background-color: #003de6;
+    color:#000000;
+}
+
+#fines-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#fines-table th, #fines-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#fines-table th {
+    background-color: #192c61;
+    color: #fff;
+}
+
 .newsletter form {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -45,33 +115,3 @@ form textarea {
     resize: vertical;
 }
 
-form button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #0051ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-form button[type="submit"]:hover {
-    background-color: #003bb5;
-}
-
-button[type="submit"] {
-    background-color: #0051ff;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button[type="submit"]:hover {
-    background-color: #2F4F4F;
-    color: #e4e70f;
-    opacity: 0.9;
-}

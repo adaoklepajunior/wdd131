@@ -88,12 +88,6 @@ h2 {
     margin-top: 20px;
 }
 
-.attractive-section img {
-    margin-top: 20px;
-    margin-right: 20px;
-    border-radius: 10%;
-}
-
 .attractive-section p {
     margin-top: 18%;
     margin-left: 20%;
@@ -107,6 +101,7 @@ h2 {
     height: auto;
     margin-top: 0%;
     margin-right: 0%;
+    border-radius: 10%;
 }
 
 figure {
