@@ -130,3 +130,13 @@ const atractions = [
   
   // Call the function and pass the array of atractions
   displayAtractions(atractions);
+
+  // Add to the info counter
+if (localStorage.getItem("infoCount")) {
+  localStorage.setItem("infoCount", Number(localStorage.getItem("infoCount")) + 1);
+} else {
+  localStorage.setItem("infoCount", 1);
+}
+
+// Display the current info count
+document.getElementById("infoCount").textContent = localStorage.getItem("infoCount");
